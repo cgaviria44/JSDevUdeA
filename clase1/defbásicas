@@ -1,0 +1,33 @@
+Mocha
+Netscape
+DOM
+Ecmascript
+Javascript es un lenguaje interpretado, pero no compilado, lo interpreta el navegador.
+RIA: Aplicación que puede entenderla un navegador, estas aplicaciones están en la web.
+SPA: la página carga una sola vez
+Framework: marco de trabajo, estructura, plantillas, librerías
+
+Arquitectura web:
+
+Frontend		Backend
+
+	persistencia
+	Base de datos
+
+var - variable pública, se declaran antes de las funciones.
+let - privado, local
+const - no cambia, pública-privada
+funciones autoejecutables
+
+que es case
+
+json, arreglos
+
+while - mientras
+for - para
+Do while - hago mientras
+
+clave valor (para objetos)
+
+propiedades=características
+métodos

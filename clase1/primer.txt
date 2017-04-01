@@ -1,0 +1,25 @@
+//Funciones por parámetros
+function suma(x,y){return x+y}
+undefined
+suma(3,2)
+5
+function resta(x,y){return x+y}
+undefined
+resta(2,3)
+5
+function resta(x,y){return x-y}
+undefined
+resta(2,3)
+-1
+function multi(x,y){return x*y}
+undefined
+multi(2,3)
+6
+function dividir(x,y){return x/y}
+undefined
+dividir(8,4)
+2
+function varias(x,y,z){return x/y*z}
+undefined
+varias(8,4,3)
+6

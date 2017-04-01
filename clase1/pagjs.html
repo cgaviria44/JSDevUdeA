@@ -1,0 +1,28 @@
+<html>
+
+<head>
+	<meta charset="UTF-8" />
+	<title>HTML & JS</title>
+</head>
+
+<body>
+
+	<body style="background-color:gray"></body>
+	<!--color de fondo-->
+	<marquee>
+		<H1>Conectando HTML con JavaScript!</H1>
+	</marquee>
+	<p>Inserte primer número: <input type "text" id="x" size="1" maxlength="10" /></p>
+	<p>Inserte segundo número: <input type "text" id="y" size="1" maxlength="10" /></p>
+	<p>Resultado: <input type "text" id="r" size="11" maxlength="10" readonly="readonly" /></p>
+	<!--<input  name="enviar" value="Sumar" onclick="operacions(x,y)" type="submit"> !-->
+	<button type="button" class="btn btn-default" onclick="resultado(0)">Sumar</button>
+	<button type="button" class="btn btn-default" onclick="resultado(1)">Restar</button>
+	<button type="button" class="btn btn-default" onclick="resultado(2)">Multiplicar</button>
+	<button type="button" class="btn btn-default" onclick="resultado(3)">Dividir</button>
+	<p><button type="reset" value="Reset" onclick="resett()">Reset</button></p>
+	<script type="text/javascript" src="conector.js"></script>
+	<!-- conector con js !-->
+</body>
+
+</html>
