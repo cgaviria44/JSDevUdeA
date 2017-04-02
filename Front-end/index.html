@@ -1,0 +1,23 @@
+<!DOCTYPE html, this is a SPA>
+<html ng-app="app">
+
+<head>
+    <meta charset="utf-8">
+    <title>Mi primer angular</title>
+    <script src="node_modules/angular/angular.js"></script>
+    <script src="./holamundo.controller.js"></script>
+</head>
+
+<body ng-controller="holacontroller">
+    <h1>{{saludo}}</h1>
+    <h1>{{object.nombre}}</h1>
+    <p>{{object.edad}}</p>
+
+    <button type="button" ng-click="saludeme()" name="button">Salúdame</button>
+    <input type="text" name="" ng-model="object.nombre" value="">
+    <h4 ng-repeat="a in arreglo">
+      {{a.nombre}} - {{a.edad}}
+    </h4>
+</body>
+
+</html>

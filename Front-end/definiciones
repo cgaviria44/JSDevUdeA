@@ -1,0 +1,15 @@
+npm init
+npm install -S angular
+
+MVC: Modelo Vista Controlador
+MVW: Modelo Vista Whatever
+
+data-building: cambios en tiempo real entre el modelo y la vista.
+
+preloader
+
+
+-aprender que hace el patrón de inyección de dependencias, modulos, controladores.
+
+-usando angular hacer una to do list:
+
