@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Angular!</title>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<link rel="stylesheet" href="/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/estilos.css">
+</head>
+
+<body ng-app="myApp" ng-controller="todoCtrl"> <!--correr código js con angular !-->
+
+<header>
+<div class="container">
+<h1>Our To do List</h1>
+</div>
+</header>
+<br><br>
+<div class="container-fluid">
+<form ng-submit="todoAdd()">
+    <input type="text" ng-model="todotask" size="20" placeholder="Add Task">
+    <input type="text" ng-model="tododate" size="20" placeholder="Add Date">
+    <input type="submit" value="Añadir">
+</form>
+
+<br>
+<div ng-repeat="x in todoList"> <!--Valor a repetir!-->
+    <input type="checkbox" ng-model="x.done"> <span ng-bind="x.todoText"></span><!--ng-model=enlazar el campo de texto a la lista!-->
+
+</div>
+</div>
+<div>
+  <center><img src="https://source.unsplash.com/category/nature" style="width:400px;high:200px" alt=""></center>
+</div>
+<script>
+var app = angular.module('myApp', []); //Document.getElementById Innerhtml
+app.controller('todoCtrl', function($scope) { //llamar el controlador con app.controller
+    $scope.todoList = []; //vacío el primer campo, listar los elementos
+
+    $scope.todoAdd = function() {
+        $scope.todoList.push({todoText:$scope.todotask, done:false});//
+        $scope.todoList.push({todoText:$scope.tododate, done:true});
+        //$scope.todoInput = "";
+
+    };
+
+});
+</script>
+
+<br><br>
+<footer>
+<div class="container">
+<h3>By Christian and Daniel</h3>
+</div>
+</footer>
+<script src="js/jsquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
